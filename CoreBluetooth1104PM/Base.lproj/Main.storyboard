@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7y0-kZ-zoa">
+                                <rect key="frame" x="51" y="120" width="62" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="52F-2Q-43v"/>
+                                    <constraint firstAttribute="width" constant="62" id="sgf-H3-4Y3"/>
+                                </constraints>
+                                <state key="normal" title="开始扫描"/>
+                                <connections>
+                                    <action selector="startScan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="frE-O2-tbu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TiZ-Hq-P0u">
+                                <rect key="frame" x="257" y="120" width="62" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Krt-jt-W8J"/>
+                                    <constraint firstAttribute="width" constant="62" id="Pys-dr-4Jq"/>
+                                </constraints>
+                                <state key="normal" title="取消扫描"/>
+                                <connections>
+                                    <action selector="cancelScan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qYc-af-ufE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1h-xB-RrW">
+                                <rect key="frame" x="162.5" y="120" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="BYs-Nc-xN8"/>
+                                    <constraint firstAttribute="height" constant="30" id="jgz-L1-rz0"/>
+                                </constraints>
+                                <state key="normal" title="发送"/>
+                                <connections>
+                                    <action selector="sendMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2bX-63-Dwi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TiZ-Hq-P0u" firstAttribute="top" secondItem="7y0-kZ-zoa" secondAttribute="top" id="3xV-sS-hkp"/>
+                            <constraint firstItem="K1h-xB-RrW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4O6-6e-60e"/>
+                            <constraint firstItem="K1h-xB-RrW" firstAttribute="top" secondItem="7y0-kZ-zoa" secondAttribute="top" id="9kg-7F-gcv"/>
+                            <constraint firstItem="K1h-xB-RrW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="IPj-cv-hbm"/>
+                            <constraint firstItem="TiZ-Hq-P0u" firstAttribute="leading" secondItem="K1h-xB-RrW" secondAttribute="trailing" constant="45" id="Mj7-9l-Rcv"/>
+                            <constraint firstItem="K1h-xB-RrW" firstAttribute="leading" secondItem="7y0-kZ-zoa" secondAttribute="trailing" constant="50" id="e5q-wG-cXM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
