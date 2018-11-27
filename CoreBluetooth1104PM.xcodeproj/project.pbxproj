@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		432B693721ADAA8000E10205 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 432B693621ADAA8000E10205 /* ViewController.m */; };
 		43B6E89E1FAD9D28008955A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B6E89D1FAD9D28008955A2 /* main.m */; };
 		43B6E8A11FAD9D28008955A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B6E8A01FAD9D28008955A2 /* AppDelegate.m */; };
-		43B6E8A41FAD9D28008955A2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B6E8A31FAD9D28008955A2 /* ViewController.m */; };
 		43B6E8A71FAD9D28008955A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43B6E8A51FAD9D28008955A2 /* Main.storyboard */; };
 		43B6E8A91FAD9D28008955A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43B6E8A81FAD9D28008955A2 /* Assets.xcassets */; };
 		43B6E8AC1FAD9D28008955A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43B6E8AA1FAD9D28008955A2 /* LaunchScreen.storyboard */; };
@@ -35,12 +35,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		432B693521ADAA8000E10205 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		432B693621ADAA8000E10205 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		43B6E8991FAD9D28008955A2 /* CoreBluetooth1104PM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreBluetooth1104PM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43B6E89D1FAD9D28008955A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		43B6E89F1FAD9D28008955A2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		43B6E8A01FAD9D28008955A2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		43B6E8A21FAD9D28008955A2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		43B6E8A31FAD9D28008955A2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		43B6E8A61FAD9D28008955A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		43B6E8A81FAD9D28008955A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43B6E8AB1FAD9D28008955A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,6 +78,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		432B693421ADAA8000E10205 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				432B693521ADAA8000E10205 /* ViewController.h */,
+				432B693621ADAA8000E10205 /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		43B6E8901FAD9D28008955A2 = {
 			isa = PBXGroup;
 			children = (
@@ -103,8 +112,7 @@
 			children = (
 				43B6E89F1FAD9D28008955A2 /* AppDelegate.h */,
 				43B6E8A01FAD9D28008955A2 /* AppDelegate.m */,
-				43B6E8A21FAD9D28008955A2 /* ViewController.h */,
-				43B6E8A31FAD9D28008955A2 /* ViewController.m */,
+				432B693421ADAA8000E10205 /* Controller */,
 				43B6E8A51FAD9D28008955A2 /* Main.storyboard */,
 				43B6E8A81FAD9D28008955A2 /* Assets.xcassets */,
 				43B6E8AA1FAD9D28008955A2 /* LaunchScreen.storyboard */,
@@ -273,7 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43B6E8A41FAD9D28008955A2 /* ViewController.m in Sources */,
+				432B693721ADAA8000E10205 /* ViewController.m in Sources */,
 				43B6E8A11FAD9D28008955A2 /* AppDelegate.m in Sources */,
 				43B6E89E1FAD9D28008955A2 /* main.m in Sources */,
 			);
