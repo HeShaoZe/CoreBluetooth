@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
     s.author             = { "heshaoze" => "1019067842@qq.com" }
     s.social_media_url   = "https://github.com/HeShaoZe/CoreBluetooth"
     s.source       = { :git => "https://github.com/HeShaoZe/CoreBluetooth.git", :tag => s.version }
-    s.source_files  = "CoreBluetooth1104PM/Controller/*.{h,m}"
+    s.source_files  = "CoreBluetooth1104PM/CoreBluetooth/*.{h,m}"
     #s.resources          = "SCSGQRCode/SCSGQRCode/SCSGQRCode.bundle"
     s.requires_arc = true
 end
